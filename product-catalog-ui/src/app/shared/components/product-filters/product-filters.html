@@ -1,0 +1,54 @@
+<div class="filters-container">
+  <h2>Filtros</h2>
+  
+  <div class="filter-group">
+    <label>Categoria</label>
+    <select [(ngModel)]="filters.categoryId" (ngModelChange)="onFiltersChange()">
+      <option value="" disabled selected hidden>Selecione uma categoria</option>
+      <option value="">Todas</option>
+      <option *ngFor="let category of categories" [value]="category.id">
+        {{ category.name }}
+      </option>
+    </select>
+  </div>
+
+  <div class="filter-group">
+    <label>Preço</label>
+    <div class="range-inputs">
+      <input 
+        type="number" 
+        placeholder="Mínimo" 
+        [(ngModel)]="filters.minPrice"
+        (ngModelChange)="onFiltersChange()"
+        min="0"
+        step="0.01">
+      <span>-</span>
+      <input 
+        type="number" 
+        placeholder="Máximo" 
+        [(ngModel)]="filters.maxPrice"
+        (ngModelChange)="onFiltersChange()"
+        min="0"
+        step="0.01">
+    </div>
+  </div>
+
+  <div class="filter-group">
+    <label>Avaliação</label>
+    <div class="range-inputs">
+      <select [(ngModel)]="filters.minRating" (ngModelChange)="onFiltersChange()">
+        <option value="">Mínimo</option>
+        <option *ngFor="let i of [1,2,3,4,5]" [value]="i">{{i}}★</option>
+      </select>
+      <span>-</span>
+      <select [(ngModel)]="filters.maxRating" (ngModelChange)="onFiltersChange()">
+        <option value="">Máximo</option>
+        <option *ngFor="let i of [1,2,3,4,5]" [value]="i">{{i}}★</option>
+      </select>
+    </div>
+  </div>
+
+  <button class="clear-btn" (click)="clearFilters()">
+    Limpar filtros
+  </button>
+</div>

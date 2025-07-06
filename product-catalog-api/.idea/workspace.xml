@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="42113caa-83ed-4b08-a68e-25bb5af3e00f" name="Changes" comment="feat: add endpoint to fetch user by ID" />
+    <list default="true" id="42113caa-83ed-4b08-a68e-25bb5af3e00f" name="Changes" comment="feat: add endpoint to fetch user by ID">
+      <change beforePath="$PROJECT_DIR$/../.gitignore" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -92,21 +94,5 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="feat: add endpoint to fetch user by ID" />
     <option name="LAST_COMMIT_MESSAGE" value="feat: add endpoint to fetch user by ID" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/br/com/catalog/product/exception/ApiExceptionHandler.java</url>
-          <line>70</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/br/com/catalog/product/exception/ApiExceptionHandler.java</url>
-          <line>55</line>
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>

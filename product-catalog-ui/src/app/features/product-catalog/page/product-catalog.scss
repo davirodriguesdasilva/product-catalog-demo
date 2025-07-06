@@ -1,0 +1,16 @@
+.product-catalog-page {
+  min-height: 100vh;
+  background-color: #f8f9fa;
+
+  .page-header {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 50px 20px;
+    text-align: center;
+
+    h1 {
+      font-size: 2.5rem;
+      font-weight: 700;
+    }
+  }
+}

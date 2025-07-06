@@ -1,0 +1,10 @@
+{
+  "/proxy/product": {
+    "target": "http://localhost:8081/",
+    "secure": false,
+    "changeOrigin": true,
+    "pathRewrite": {
+      "^/proxy/product": ""
+    }
+  }
+}
