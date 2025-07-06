@@ -1,11 +1,12 @@
-import { Component, Input } from '@angular/core';
+import { Component, Input, ChangeDetectionStrategy } from '@angular/core';
 import { Product } from '../../interfaces/Product.interface';
 
 @Component({
   selector: 'app-product-card',
   standalone: false,
   templateUrl: './product-card.html',
-  styleUrl: './product-card.scss'
+  styleUrl: './product-card.scss',
+  changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class ProductCard {
   @Input() product!: Product;
